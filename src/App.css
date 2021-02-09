@@ -8,14 +8,12 @@ main {
 }
 
 h2 {
-  color: #426696;
+  color: #487abb73;
   font-weight: 400;
-  opacity: 0.8;
 }
 
 h3 {
-  color: #6cdbeb;
-  opacity: 0.8;
+  color: #43afc0;
 }
 
 .form {
@@ -37,6 +35,8 @@ h3 {
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -56,7 +56,7 @@ h3 {
 
 .AR {
   font-weight: 600;
-  color: #6cdbeb;
+  color: #43afc0;
   opacity: 0.8;
 }
 
@@ -97,8 +97,23 @@ h3 {
   padding: 0.5rem;
 }
 
+.link :hover {
+  cursor: pointer;
+}
+
 .form {
   flex: 2;
+}
+
+.btn {
+  box-sizing: border-box;
+  background: linear-gradient(to right top, rgb(109, 218, 226, 0.7), rgb(109, 218, 226, 0.3));
+  border: none;
+  width: 70%;
+  margin-top: 1rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .circle-1 {
@@ -109,4 +124,17 @@ h3 {
 .circle-2 {
   bottom: 5%;
   left: 10%
+}
+
+.card-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  text-align: justify;
+}
+
+.card-container p {
+  padding: 8px;
 }
