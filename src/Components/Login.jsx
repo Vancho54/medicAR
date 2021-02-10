@@ -1,15 +1,29 @@
 import React from 'react';
 
-const Login = () => {
+const Login = ({setUserInput, userInput}) => {
 
-
+    const handleChange = (e) => {
+        setUserInput({
+            ...userInput,
+            [e.target.name]: e.target.value
+        })
+    }
 
     return(
     <div className='form'>
         <div className='card'>
             <form className='form-inputs'>
-                <input placeholder='DNI' />
-                <input placeholder='Contraseña'/>
+                <input 
+                    type='text'
+                    name='dni'
+                    placeholder='DNI' 
+                    onChange={handleChange}    
+                />
+                <input
+                    type='password'
+                    name='password'
+                    onChange={handleChange} 
+                    placeholder='Contraseña'/>
                 <select>
                     <option>---Obra Social---</option>
                 </select>
